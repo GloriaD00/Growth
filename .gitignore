@@ -1,0 +1,5 @@
+/.idea
+/dist
+/composer.phar
+/package-lock.json
+/config.php
