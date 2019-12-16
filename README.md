@@ -1,12 +1,12 @@
 # Growth
-##How to use it
+## How to use it
 
 Edit config.php file with your database name, password and user.
 
 The table structure of the database is the one that follows 
 
 
-#Utenti table
+### Utenti table
 ```
 CREATE TABLE `Utenti` (
   `id_utente` int(11) NOT NULL AUTO_INCREMENT,
@@ -17,7 +17,7 @@ CREATE TABLE `Utenti` (
   PRIMARY KEY (`id_utente`)
 ) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 ```
-#Progetti table
+### Progetti table
 ```
 
 CREATE TABLE `Progetti` (
@@ -30,7 +30,7 @@ CREATE TABLE `Progetti` (
 ) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 ```
-#Liste table
+### Liste table
 ```
 CREATE TABLE `Liste` (
   `id_lista` int(11) NOT NULL AUTO_INCREMENT,
@@ -43,7 +43,7 @@ CREATE TABLE `Liste` (
 ) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 ```
-#Tasks table
+### Tasks table
 ```
 CREATE TABLE `Tasks` (
   `id_task` int(11) NOT NULL AUTO_INCREMENT,
