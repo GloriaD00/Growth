@@ -3,9 +3,9 @@ return [
 
     'database'=>[
 
-        'name'=>'GetSD',
-        'user'=>'root',
-        'password'=>'',
+        'name'=>'DBNAME',
+        'user'=>'USER',
+        'password'=>'PASSWORD',
         'connection'=>'mysql:host=localhost',
         'port'=>'8000',
         'options'=>[
