@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Supermercado+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+
+    font-size: 16px;
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+
+    margin-top: 100px;
+
+}
+
+
+input{
+    margin-left: 80px;
+    width: 80%;
+    height: 70px;
+    font-family: 'Baloo Bhai', cursive;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+}
+
+input:hover{
+    border: none;
+
+}
+input:focus{
+    outline: none;
+}
+
+h1{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 8em;
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+h2{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 7em;
+    color: whitesmoke;
+    text-align: center;
+}
+
+a{
+    font-family:  'Supermercado One', cursive;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2em;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+button[type="submit"]{
+    margin-left: 80px;
+    width: 50%;
+    height: 70px;
+    font-family: 'Baloo Bhai', cursive;
+    border: none;
+    background: white;
+    border-radius: 7px;
+    font-size: 1.8em;
+    outline: none;
+
+
+
+}
+
+.unmatching{
+    border: 2px solid red;
+
+}
+.unmatching:last-of-type{
+    margin-bottom: 10px;
+}
+
+.unmatching::placeholder{
+    color: red;
+}
+
+.unmatching-p{
+    margin-left: 80px;
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.exists{
+    border: 2px solid red;
+    margin-bottom: 10px;
+
+}
+.exists::placeholder{
+    color: red;
+}
+.exists:last-of-type{
+    margin-bottom: 10px;
+}
+
+.exists-p{
+    margin-left: 80px;
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-family: 'Baloo Bhai', cursive;
+}
+.weak-p{
+    margin-left: 80px;
+    color: white;
+
+    margin-bottom: 30px;
+    font-family: 'Baloo Bhai', cursive;
+    margin-bottom: 10px;
+}
+.weak{
+    border: 2px solid red;
+    margin-bottom: 10px;
+
+}
+.weak::placeholder{
+    color: red;
+}
+.weak:last-of-type{
+    margin-bottom: 10px;
+}
+
+.fail{
+    border: 2px solid red;
+
+}
+
+.fail-p{
+    margin-left: 80px;
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    font-family: 'Baloo Bhai', cursive;
+    margin-top: 10px;
+}

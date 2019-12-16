@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Supermercado+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+
+    font-size: 16px;
+
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: dimgray;
+    z-index: 3;
+    color: whitesmoke;
+    font-family: 'Baloo Bhai', cursive;
+    height: 70px;
+
+    font-size: 2em;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.navbar>button{
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: 'Baloo Bhai', cursive;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    border: none;
+}
+.page{
+    display: flex;
+    height: 100%;
+    z-index: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.appear{
+    width: 400px;
+    height: 400px;
+    align-self: center;
+    border-radius: 10px;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    left: 50%;
+    top:50%;
+    z-index: 7;
+    padding-top: 10px;
+
+
+}
+
+.hide{
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+button[type="submit"]{
+    margin-left: 20px;
+    width: 50%;
+    height: 70px;
+    font-family: 'Baloo Bhai', cursive;
+    border: none;
+    background: white;
+    border-radius: 7px;
+    font-size: 1.8em;
+    outline: none;
+
+
+
+}
+
+input{
+    margin-left: 20px;
+
+    width: 80%;
+    height: 70px;
+    font-family: 'Baloo Bhai', cursive;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+}
+
+.hideB{
+    outline:none;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 2em;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    font-family: 'Baloo Bhai', cursive;
+    text-align: left;
+
+}
+
+
+.empty{
+
+    position: absolute;
+    left: 27%;
+    top:50%;
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.empty>h1{
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+    font-size: 2em;
+
+}
+
+.empty>button{
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 50%;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 4em;
+    font-family: 'Baloo Bhai', cursive;
+    cursor: pointer;
+}
+
+.list-container{
+    width: 300px;
+    padding: 20px;
+    height: min-content;
+    background-color: gainsboro;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+
+}
+
+.list-container>h1{
+    font-family: 'Baloo Bhai', cursive;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.tasks{
+    margin-top: 20px;
+}
+
+
+.addTask{
+margin-top: 20px;
+    width: 50%;
+    height: 50px;
+    font-family: 'Baloo Bhai', cursive;
+    border: none;
+    background: white;
+    border-radius: 7px;
+    font-size: 1.8em;
+    outline: none;
+    cursor: pointer;
+}
+
+.task-container{
+    background-color: white;
+    color: black;
+    font-family: 'Baloo Bhai', cursive;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.filled{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.appear1{
+    width: 400px;
+    height: 500px;
+    align-self: center;
+    border-radius: 10px;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    left: 50%;
+    top:40%;
+    z-index: 7;
+    padding-top: 10px;
+}
+
+.hide1{
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.hideB1{
+    outline:none;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 2em;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    font-family: 'Baloo Bhai', cursive;
+    text-align: left;
+}
+
+textarea{
+    margin-left: 20px;
+
+    width: 80%;
+    height: 100px;
+    font-family: 'Baloo Bhai', cursive;
+    margin-bottom: 30px;
+
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+
+}
+
+.appear2{
+    width: 400px;
+    height: 500px;
+    align-self: center;
+    border-radius: 10px;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    left: 50%;
+    top:40%;
+    z-index: 7;
+    padding-top: 10px;
+}
+
+.hide2{
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.hideB3{
+    outline:none;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 2em;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    font-family: 'Baloo Bhai', cursive;
+    text-align: left;
+}
+
+.viewTask>p{
+    background-color: white;
+    padding:5px;
+    margin: 10px;
+    font-family: 'Baloo Bhai', cursive;
+    border-radius: 5px;
+    min-height: 10px;
+}
+
+.viewTask>p:last-of-type{
+
+    max-width: 150px;
+}
+
+.viewTask>h2{
+
+    padding:5px;
+    margin: 10px;
+    font-family: 'Baloo Bhai', cursive;
+
+}
+
+#moveTask,#delete,#complete{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 30%;
+    height: 50px;
+    font-family: 'Baloo Bhai', cursive;
+    border: none;
+    background: white;
+    border-radius: 7px;
+    font-size: 1.5em;
+    outline: none;
+    cursor: pointer;
+}
+
+.hide4{
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+#taskMover{
+    margin-top: 20px;
+}
+
+.edit, .del{
+    width: 200px;
+    margin-left: 10px;
+    justify-content: space-between;
+    font-family: 'Baloo Bhai', cursive;
+    color: black;
+    height: 20px;
+    font-size: 1.3em;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline;
+
+
+
+}
+
+.del>a{
+    color: red;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    width: 200px;
+    height: 30px;
+}

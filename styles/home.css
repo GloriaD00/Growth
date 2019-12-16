@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Supermercado+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+
+    font-size: 16px;
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+header {
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+header>p{
+    font-family:  'Supermercado One', cursive;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.title{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 12em;
+    color: whitesmoke;
+    text-align: center;
+
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    width: 20%;
+    padding: 20px;
+    font-size: 2.2em;
+    font-family: 'Baloo Bhai', cursive;
+    margin-top: 20px;
+
+}
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}

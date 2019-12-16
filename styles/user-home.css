@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Supermercado+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+
+    font-size: 16px;
+
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: dimgray;
+    z-index: 3;
+    color: whitesmoke;
+    font-family: 'Baloo Bhai', cursive;
+    height: 70px;
+
+    font-size: 2em;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.navbar>button{
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: 'Baloo Bhai', cursive;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    border: none;
+}
+.page{
+    display: flex;
+    height: 100%;
+    z-index: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.appear{
+    width: 400px;
+    height: 300px;
+    align-self: center;
+    border-radius: 10px;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    left: 50%;
+    top:50%;
+    z-index: 7;
+    padding-top: 10px;
+
+
+}
+
+.hide{
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+
+button[type="submit"]{
+    margin-left: 20px;
+    width: 50%;
+    height: 70px;
+    font-family: 'Baloo Bhai', cursive;
+    border: none;
+    background: white;
+    border-radius: 7px;
+    font-size: 1.8em;
+    outline: none;
+    cursor: pointer;
+
+
+
+
+}
+
+input{
+    margin-left: 20px;
+
+    width: 80%;
+    height: 70px;
+    font-family: 'Baloo Bhai', cursive;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+}
+
+.hideB{
+    outline:none;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 2em;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    font-family: 'Baloo Bhai', cursive;
+    text-align: left;
+
+}
+
+.project-container{
+    margin-top: 50px;
+    width: 300px;
+    height: 130px;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: white;
+    font-family: 'Baloo Bhai', cursive;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.bottolm-bar{
+    margin-top: 10px;
+    width: 200px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Baloo Bhai', cursive;
+    color: black;
+
+    font-size: 12px;
+
+}
+
+.bottolm-bar>a{
+    color: black;
+}
+.bottolm-bar>a:nth-of-type(2){
+    color: red;
+}
+
+.filled{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.empty{
+
+    position: absolute;
+    left: 27%;
+    top:50%;
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.empty>h1{
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+    font-size: 2em;
+
+}
+
+.empty>button{
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 50%;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 4em;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.appear1{
+    width: 400px;
+    height: 300px;
+    align-self: center;
+    border-radius: 10px;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    left: 50%;
+    top:40%;
+    z-index: 7;
+    padding-top: 10px;
+}
+
+.hide1{
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.hideB1{
+    outline:none;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 2em;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    font-family: 'Baloo Bhai', cursive;
+    text-align: left;
+
+}
+
+
+
+.modifyBTN{
+    background-color: transparent;
+    font-family: 'Baloo Bhai', cursive;
+    color: black;
+    border: none;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+
+}
+
+
+
+.appear2{
+    width: 400px;
+    height: 300px;
+    align-self: center;
+    border-radius: 10px;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    left: 50%;
+    top:40%;
+    z-index: 7;
+    padding-top: 10px;
+}
+
+.hide2{
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.hideB2{
+    outline:none;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 2em;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    font-family: 'Baloo Bhai', cursive;
+    text-align: left;
+
+}
+
+#plusB{
+    cursor: pointer;
+}
