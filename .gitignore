@@ -2,4 +2,4 @@
 /dist
 /composer.phar
 /package-lock.json
-/config.php
+/node_modules
